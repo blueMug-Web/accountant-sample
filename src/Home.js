@@ -2,14 +2,33 @@ import React from 'react'
 import smiling_man from '../src/images/Testimonials/smiling_man.jpg'
 import smiling_man_2 from '../src/images/Testimonials/smiling_man_2.jpg'
 import smiling_woman from '../src/images/Testimonials/smiling_woman.jpg'
+import AnimatedPage from './AnimatedPage'
+import { motion } from "framer-motion"
+
+const titleAnimation = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+}
+
 
 const Home = () => {
   return (
-    <>
+    
+    <div>
     {/* //HEADER */}
+    
     <section className="hero__container h-screen flex items-center justify-center">
+    <AnimatedPage>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-center text-5xl lg:text-7xl uppercase text-gray-50">Grow Your Accounting Services</h1>
+        <motion.h1 
+          initial="hidden" 
+          animate="visible" 
+          variants={titleAnimation} 
+          exit="exit" 
+          transition={{ duration: 3 }}
+          className="text-center text-5xl lg:text-7xl uppercase text-gray-50">
+            Grow Your Accounting Services
+        </motion.h1>
         <p className="text-lg lg:text-2xl text-gray-50 mt-12 mb-16 max-w-prose leading-relaxed text-center">Lorem ipsum
           dolor sit amet consectetur adipisicing elit. Praesentium iure atque nobis, odio aliquam culpa placeat? Id eius
           incidunt tempore eum magnam accusantium neque rem, velit commodi sunt itaque magni.</p>
@@ -20,7 +39,9 @@ const Home = () => {
             href="/services.html">Keep Reading</a>
         </div>
       </div>
+      </AnimatedPage>
     </section>
+    
 
     {/* //REST OF HOME PAGE
     // //start of 'Trusted By' section */}
@@ -237,7 +258,8 @@ const Home = () => {
       <a className="inline-block text-2xl mt-16 border rounded-full px-5 py-5 bg-green-600 border-green-600 text-white hover:bg-green-500 hover:border-green-500 hover:text-green-50 focus:ring-2 focus:ring-green-300" href="/contact.html">Request a free
         consultation</a>
     </section>
-    </>
+    </div>
+    
   )
 }
 

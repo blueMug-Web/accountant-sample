@@ -1,8 +1,10 @@
 import React from "react";
+import AnimatedPage from "./AnimatedPage";
 
 const Blog = () => {
 	return (
-		<>
+		<AnimatedPage>
+		<div>
 			{/* <!-- Start of Blog--> */}
 			<section class="pt-24 pb-40 lg:pt-40 lg:pb-60 flex justify-center">
 				<ul class="mx-8 w-full md:mx-auto md:w-11/12 lg:mx-auto lg:w-1/2">
@@ -175,7 +177,8 @@ const Blog = () => {
 					Request a free consultation.
 				</a>
 			</section>
-		</>
+		</div>
+		</AnimatedPage>
 	);
 };
 

@@ -1,9 +1,11 @@
 import React from "react";
+import AnimatedPage from "./AnimatedPage";
 import resources from './images/resources.jpg'
 
 const AccountingResources = () => {
 	return (
-		<>
+		<AnimatedPage>
+		<div>
 			{/* <!-- Start of 'Resources' Landing --> */}
 			<section class="flex px-8 lg:px-0 justify-center bg-gray-100">
 				<div class="flex flex-col lg:flex-row items-center max-w-screen-xl lg:px-8">
@@ -257,7 +259,8 @@ const AccountingResources = () => {
 					Request a free consultation.
 				</a>
 			</section>
-		</>
+		</div>
+		</AnimatedPage>
 	);
 };
 

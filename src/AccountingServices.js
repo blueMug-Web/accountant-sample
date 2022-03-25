@@ -4,12 +4,14 @@ import trophy from './images/trophy.png';
 import smiling_man from '../src/images/Testimonials/smiling_man.jpg'
 import smiling_man_2 from '../src/images/Testimonials/smiling_man_2.jpg'
 import smiling_woman from '../src/images/Testimonials/smiling_woman.jpg'
+import AnimatedPage from "./AnimatedPage";
 
 
 const AccountingServices = () => {
 	return (
-		//   {/* {Start of 'Services' Landing */}
-		<>
+		<AnimatedPage>
+		   {/* {Start of 'Services' Landing */}
+		<div>
 			<section className="flex px-8 lg:px-0 justify-center bg-gray-100">
 				<div className="flex flex-col lg:flex-row items-center max-w-screen-xl lg:px-8">
 					<div className="pt-24 pb-12 lg:pt-44 lg:pb-32 lg:pr-16 ">
@@ -434,7 +436,8 @@ const AccountingServices = () => {
 					Request a free consultation.
 				</a>
 			</section>
-		</>
+		</div>
+		</AnimatedPage>
 	);
 };
 

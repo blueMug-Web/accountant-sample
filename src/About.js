@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AnimatedPage from "./AnimatedPage";
 
 const About = () => {
@@ -6,11 +7,11 @@ const About = () => {
 		<AnimatedPage>
 			<div>
 				{/* <!-- Start of 'About Us' Landing --> */}
-				<section class="pt-32 px-12 pl-6 pb-24 lg:pt-44 lg:pb-32 lg:pl-32">
-					<h1 class="text-xs lg:text-base uppercase font-bold mb-3 lg:mb-6 text-gray-400">
+				<section className="pt-32 px-12 pl-6 pb-24 lg:pt-44 lg:pb-32 lg:pl-32">
+					<h1 className="text-xs lg:text-base uppercase font-bold mb-3 lg:mb-6 text-gray-400">
 						About Us
 					</h1>
-					<p class="font-semibold lg:w-1/2 text-3xl lg:text-5xl max-w-prose text-gray-700">
+					<p className="font-semibold lg:w-1/2 text-3xl lg:text-5xl max-w-prose text-gray-700">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nisi
 						risus ac, elit malesuada massa. Tristique porttitor sed odio enim
 						sit molestie.
@@ -18,14 +19,14 @@ const About = () => {
 				</section>
 
 				{/* <!-- About Us background image --> */}
-				<div class="about_us-image h-80 lg:h-screen"></div>
+				<div className="about_us-image h-80 lg:h-screen"></div>
 
 				{/* <!-- Start of 'About Us' longer description/story --> */}
-				<section class="flex flex-col items-center pt-16 lg:pt-20 pb-40">
-					<h2 class="thick_underline tracking-wider font-bold text-3xl lg:text-4xl uppercase text-gray-700">
+				<section className="flex flex-col items-center pt-16 lg:pt-20 pb-40">
+					<h2 className="thick_underline tracking-wider font-bold text-3xl lg:text-4xl uppercase text-gray-700">
 						A Closer Look
 					</h2>
-					<p class="max-w-prose pt-20 pb-0 px-8 lg:py-24 lg:px-0 text-gray-700">
+					<p className="max-w-prose pt-20 pb-0 px-8 lg:py-24 lg:px-0 text-gray-700">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
 						integer odio vulputate ac pharetra eget nascetur. Ac turpis enim
 						condimentum tortor sagittis.
@@ -55,23 +56,23 @@ const About = () => {
 						ipsum consectetur tempus morbi interdum non at.
 						<br />
 						<br />
-						<span class="text-sm font-semibold text-gray-600">
+						<span className="text-sm font-semibold text-gray-600">
 							- Dennis Bergkamp, Director
 						</span>
 					</p>
 				</section>
 
 				{/* <!-- Start of 'Ready To Get Started' Section --> */}
-				<section class="get_started__header flex flex-col items-center pt-14 pb-16 lg:pt-18 lg:pb-20 bg-white">
-					<h2 class="text-center font-bold px-4 lg:px-0 text-3xl lg:text-4xl uppercase text-gray-700">
+				<section className="get_started__header flex flex-col items-center pt-14 pb-16 lg:pt-18 lg:pb-20 bg-white">
+					<h2 className="text-center font-bold px-4 lg:px-0 text-3xl lg:text-4xl uppercase text-gray-700">
 						Ready to Get Started?
 					</h2>
-					<a
-						class="link_underline inline-block text-2xl mt-16 text-gray-600"
-						href="/"
+					<Link
+						to="/contact"
+						className="link_underline border rounded-full py-2 my-5 px-3 uppercase inline-block text-2xl mt-16 border-green-700 text-green-600 hover:bg-green-700 hover:border-green-700 hover:text-blue-50 focus:ring-2 focus:ring-green-300"
 					>
-						Request a free consultation.
-					</a>
+						Request a free consultation
+					</Link>
 				</section>
 			</div>
 		</AnimatedPage>

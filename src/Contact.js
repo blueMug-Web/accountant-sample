@@ -5,22 +5,24 @@ const Contact = () => {
 	return (
 		<AnimatedPage>
 			<div>
-				<section class="pt-12 pb-0 lg:pt-12 lg:pb-32">
-					<h1 class="font-semibold my-10 text-center text-3xl lg:text-5xl text-gray-700 my-18">
+				<section className="pt-12 pb-0 lg:pt-12 lg:pb-32">
+					<h1 className="font-semibold my-10 text-center text-3xl lg:text-5xl text-gray-700 my-18">
 						Contact Us
 					</h1>
 					{/* <!-- Contact Info + Form Container --> */}
-					<div class="flex justify-center">
-						<div class="flex flex-col  lg:flex-row rounded-md overflow-hidden lg:shadow-lg">
-							<div class="bg-gray-100 px-8 lg:px-20 py-12 flex items-center">
+					<div className="flex justify-center">
+						<div className="flex flex-col  lg:flex-row rounded-md overflow-hidden lg:shadow-lg">
+							<div className="bg-gray-100 px-8 lg:px-20 py-12 flex items-center">
 								{/* <!-- Contact Info --> */}
 								<div>
-									<h2 class="font-medium mb-5 text-gray-700">Get in Touch</h2>
+									<h2 className="font-medium mb-5 text-gray-700">
+										Get in Touch
+									</h2>
 									<div>
-										<div class="flex items-center mb-10">
-											<div class="p-2 rounded-full mr-6 bg-blue-100">
+										<div className="flex items-center mb-10">
+											<div className="p-2 rounded-full mr-6 bg-green-50">
 												<svg
-													class="text-blue-500 fill-current"
+													className="text-green-700 fill-current"
 													width="18"
 													height="18"
 													viewBox="0 0 18 18"
@@ -41,19 +43,19 @@ const Contact = () => {
 												</svg>
 											</div>
 											<div>
-												<span class="block text-xs font-medium text-gray-600">
+												<span className="block text-xs font-medium text-gray-600">
 													Telephone Number
 												</span>
-												<span class="block font-medium text-gray-600">
+												<span className="block font-medium text-gray-600">
 													(+27) 81 343 4552
 												</span>
 											</div>
 										</div>
 									</div>
-									<div class="flex items-center mb-10">
-										<div class="p-2 rounded-full mr-6 bg-blue-100">
+									<div className="flex items-center mb-10">
+										<div className="p-2 rounded-full mr-6 bg-green-50">
 											<svg
-												class="text-blue-500 fill-current"
+												className="text-green-700 fill-current"
 												width="16"
 												height="12"
 												viewBox="0 0 16 12"
@@ -64,18 +66,18 @@ const Contact = () => {
 											</svg>
 										</div>
 										<div>
-											<span class="block text-xs font-medium text-gray-600">
+											<span className="block text-xs font-medium text-gray-600">
 												Email Address
 											</span>
-											<span class="block font-medium text-gray-600">
+											<span className="block font-medium text-gray-600">
 												accounting@business.com
 											</span>
 										</div>
 									</div>
-									<div class="flex items-center mb-10">
-										<div class="p-2 rounded-full bg-blue-100 mr-6">
+									<div className="flex items-center mb-10">
+										<div className="p-2 rounded-full bg-green-50 mr-6">
 											<svg
-												class="text-blue-500 fill-current"
+												className="text-green-700 fill-current"
 												width="18"
 												height="18"
 												viewBox="0 0 18 18"
@@ -98,10 +100,10 @@ const Contact = () => {
 											</svg>
 										</div>
 										<div>
-											<span class="block text-xs font-medium text-gray-600">
+											<span className="block text-xs font-medium text-gray-600">
 												Physical Address
 											</span>
-											<span class="block font-medium text-gray-600">
+											<span className="block font-medium text-gray-600">
 												3 Abbey Rd, London, United Kingdom
 											</span>
 										</div>
@@ -109,13 +111,13 @@ const Contact = () => {
 								</div>
 							</div>
 							{/* <!-- Contact Form --> */}
-							<div class="bg-white px-8 lg:px-20 pt-12 pb-20">
-								<div class="flex items-center">
+							<div className="bg-white px-8 lg:px-20 pt-12 pb-20">
+								<div className="flex items-center">
 									<div>
-										<h2 class="text-xl lg:text-xl font-medium mb-1 text-gray-700">
+										<h2 className="text-xl lg:text-xl font-medium mb-1 text-gray-700">
 											Have a Question?
 										</h2>
-										<span class="text-sm mb-4 text-gray-400">
+										<span className="text-sm mb-4 text-gray-400">
 											Pop us a message and we'll get in touch.
 										</span>
 										{/* <!-- Form --> */}
@@ -125,13 +127,13 @@ const Contact = () => {
 											autocomplete="off"
 											netlify-honeypot="bot-field"
 										>
-											<p class="hidden">
+											<p className="hidden">
 												<label>
 													Don’t fill this out if you’re human:{" "}
 													<input name="bot-field" />
 												</label>
 											</p>
-											<div class="input-animated">
+											<div className="input-animated">
 												<input
 													type="text"
 													id="name"
@@ -140,11 +142,11 @@ const Contact = () => {
 													pattern="\S+.*"
 													placeholder="the placeholder"
 												/>
-												<label htmlFor="name" class="label-name">
-													<span class="content-name">Name</span>
+												<label htmlFor="name" className="label-name">
+													<span className="content-name">Name</span>
 												</label>
 											</div>
-											<div class="input-animated">
+											<div className="input-animated">
 												<input
 													type="email"
 													id="email"
@@ -152,8 +154,8 @@ const Contact = () => {
 													required
 													placeholder="the placeholder"
 												/>
-												<label htmlFor="email" class="label-email">
-													<span class="content-email">Email</span>
+												<label htmlFor="email" className="label-email">
+													<span className="content-email">Email</span>
 												</label>
 											</div>
 											<div>
@@ -171,19 +173,19 @@ const Contact = () => {
 											<button
 												type="submit"
 												id="submit-button"
-												class="w-full uppercase text-center px-5 py-3 shadow-md my-4 lg:mb-0 bg-blue-500 border border-blue-500 text-gray-50 hover:bg-blue-400 hover:border-blue-400 focus:ring-4 focus:ring-blue-300"
+												className="w-full uppercase text-center px-5 py-3 shadow-md my-4 lg:mb-0 bg-green-700 border rounded-full border-green-600 text-gray-50 hover:bg-green-500 hover:border-green-500 focus:ring-4 focus:ring-green-300"
 											>
 												Send Message
 											</button>
 											<span
 												id="success"
-												class="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-green-500 bg-green-100 text-green-600"
+												className="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-green-500 bg-green-100 text-green-600"
 											>
 												Thanks! We'll be in touch soon.
 											</span>
 											<span
 												id="error"
-												class="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-red-500 bg-red-100 text-red-600"
+												className="hidden absolute mt-2 px-4 py-2 font-medium border rounded-sm border-red-500 bg-red-100 text-red-600"
 											>
 												Whoops... Something went wrong.
 											</span>
@@ -196,17 +198,18 @@ const Contact = () => {
 				</section>
 
 				{/*Google Map Location*/}
-				<section class="relative h-96">
-					<div class="absolute top-0 right-0 left-0 bottom-0 pointer-events-none bg-blue-500 opacity-20"></div>
-					{/* <iframe
-				width="100%"
-				height="100%"
-				frameborder="0"
-				scrolling="yes"
-				marginheight="0"
-				marginwidth="0"
-				src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=3%20Abbey%20Rd,%20St%20John's%20Wood,%20London%20NW8%209AY,%20United%20Kingdom&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-			></iframe> */}
+				<section className="relative h-96">
+					<div className="absolute top-0 right-0 left-0 bottom-0 pointer-events-none bg-green-500 opacity-10"></div>
+					<iframe
+						title="location in Google Maps, London, UK"
+						width="100%"
+						height="100%"
+						frameborder="0"
+						scrolling="yes"
+						marginheight="0"
+						marginwidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=3%20Abbey%20Rd,%20St%20John's%20Wood,%20London%20NW8%209AY,%20United%20Kingdom&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					></iframe>
 				</section>
 			</div>
 		</AnimatedPage>

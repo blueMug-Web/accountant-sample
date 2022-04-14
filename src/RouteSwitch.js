@@ -1,11 +1,5 @@
 import React from "react";
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Outlet,
-	useLocation,
-} from "react-router-dom";
+import { Routes, Route, Outlet, useLocation } from "react-router-dom";
 import "./Tailwind.css";
 import Nav from "./Nav";
 import Home from "./Home";
@@ -20,28 +14,29 @@ import { AnimatePresence } from "framer-motion";
 const RouteSwitch = () => {
 	const location = useLocation();
 	return (
-			<AnimatePresence exitBeforeEnter>
-				<Routes key={location.pathname} location={location}>
-					<Route path="/" element={<Layout />}>
-						<Route index element={<Home />} />
-						<Route path="accounting-services" element={<AccountingServices />} />
-						<Route path="accounting-resources" element={<AccountingResources />} />
-						<Route path="blog" element={<Blog />} />
-						<Route path="about" element={<About />} />
-						<Route path="contact" element={<Contact />} />
-					</Route>
-				</Routes>
-			</AnimatePresence>
-		
-        
+		<AnimatePresence exitBeforeEnter>
+			<Routes key={location.pathname} location={location}>
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="accounting-services" element={<AccountingServices />} />
+					<Route
+						path="accounting-resources"
+						element={<AccountingResources />}
+					/>
+					<Route path="blog" element={<Blog />} />
+					<Route path="about" element={<About />} />
+					<Route path="contact" element={<Contact />} />
+				</Route>
+			</Routes>
+		</AnimatePresence>
 	);
 };
 const Layout = () => {
 	return (
 		<>
-            <Nav />
+			<Nav />
 			<Outlet />
-            <Footer />
+			<Footer />
 		</>
 	);
 };
@@ -53,7 +48,7 @@ export default RouteSwitch;
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/contact" element={<Contact />} /> */
-				/* <Route
+/* <Route
 					path="*"
 					element={
 						<main style={{ padding: "1rem" }}>

@@ -43,14 +43,14 @@ h2.thick_underline::after {
 	@apply relative;
 }
 
-.link_underline::after {
+/* .link_underline::after {
 	content: "";
 	@apply absolute w-full left-0 bottom-1 border-4 border-blue-400 opacity-30;
 }
 
 .link_underline:hover::after {
 	/* @apply border-14; */
-}
+/*} */
 
 /* #region Dropdown Reset & Animation (<details>)*/
 details > summary::-webkit-details-marker {
@@ -68,7 +68,7 @@ svg {
 }
 .open summary,
 .open summary svg {
-	@apply text-blue-500;
+	@apply text-green-700;
 }
 
 .open svg {
@@ -84,7 +84,7 @@ form {
 	/*  STATUS COLOURS  */
 	--error: rgba(239, 68, 68, 1);
 	--success: rgba(16, 185, 129, 1);
-	--underline: rgba(96, 165, 250, 1);
+	--underline: rgb(6, 189, 6);
 }
 
 form div {
